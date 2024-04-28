@@ -1,0 +1,21 @@
+{
+    "name": "Digital Ocean Ispeed",
+    "dockerFile": "Dockerfile",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "dotfiles.repository": "git@github.com:losalamosal/dotfiles",
+                "dotfiles.targetPath": "~/dotfiles",
+                "dotfiles.installCommand": "~/dotfiles/install.sh",
+                "terminal.integrated.defaultProfile.linux": "zsh",
+                "editor.formatOnSave": true
+            },
+            "extensions": [
+                "esbenp.prettier-vscode"
+            ]
+        }
+    },
+    "mounts": [
+        "source=${env:HOME}${env:USERPROFILE}/.vscode-zsh-hists/docean-ispeed,target=/home/devboy/.zsh_history,type=bind"    ],
+    "remoteUser": "devboy"
+}

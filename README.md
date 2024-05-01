@@ -1,6 +1,11 @@
 ## Install Operating System on Pi
 
+1. Set the timezone (`sudo timedatectl set-timezone America/Denver`)
+1. Set the locale
+
 ## Setup OOKLA Speedtest on Pi
+
+1. Install Ookla Speedtest (`curl`, then `sudo apt install speedtest`)
 
 1. Install Ookla Speedtest.
 1. Put speedtest in cron file (NOT on the hour).
@@ -18,3 +23,13 @@
 1. Check the SSH agent (`ssh-add -l`)
 1. Disable root login.
 1. Disable password login.
+
+## Write the Node Server
+
+## Install NGINX
+
+## Link NGINX to Server
+
+## Point Namecheap Subdomain to DO Droplet
+
+## Install Certificate for SSL?

@@ -1,3 +1,8 @@
+// TODO: add logging
+// TODO: add better error checking
+// TODO: add S3 backup
+// TODO: populate and use the .env file
+// TODO: comment and document in README
 const fastify = require("fastify")({
   logger: true,
 });
@@ -8,13 +13,6 @@ fastify.get("/losalamosal", function (request, reply) {
 });
 
 fastify.post("/losalamosal", function (request, reply) {
-  /*
-  console.log(request.params);
-  console.log(request.raw.rawHeaders);
-  console.log(request.method);
-  console.log(request.url);
-  console.log(request.query);
-  */
   console.log(request.body);
 
   fs.appendFileSync("speeds.txt", request.body + "\n");

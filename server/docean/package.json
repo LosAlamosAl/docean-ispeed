@@ -4,6 +4,7 @@
     "dev": "nodemon app | pino-pretty"
   },
   "dependencies": {
+    "csv-parse": "^5.5.5",
     "fastify": "^4.26.2"
   },
   "devDependencies": {
